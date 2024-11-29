@@ -2,13 +2,13 @@
 #define ACTIONS_H
 /* Set of basic action functions organized in a struct */
 
-typedef struct Actions {
+typedef struct {
     void (*TurnOnLights)(void);
     void (*TurnOffLights)(void);
     void (*LockDoor)(void);
     void (*UnlockDoor)(void);
-} Actions;
+} Actions_t;
 
-extern Actions actions;
+extern Actions_t actions;
 
 #endif /* ACTIONS_H */
